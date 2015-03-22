@@ -115,12 +115,12 @@ namespace DataStructures_Algorithms.Lists.LinkedList.Double
                 after.Next = newNode;
             }
 
+            Count++;
+
             if (Head != null) return;
 
             Head = after;
             Head.Next = newNode;
-
-            Count++;
         }
 
         /// <summary>

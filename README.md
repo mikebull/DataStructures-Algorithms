@@ -6,3 +6,4 @@ Currently Implemented
 ---------------------
 
 * [Single Linked List](http://en.wikipedia.org/wiki/Linked_list)
+* [Doubly Linked List](http://en.wikipedia.org/wiki/Doubly_linked_list)

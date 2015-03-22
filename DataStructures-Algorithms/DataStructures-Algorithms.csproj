@@ -41,9 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lists\LinkedList\Double\Interfaces\ILinkedList.cs" />
+    <Compile Include="Lists\LinkedList\Double\LinkedList.cs" />
+    <Compile Include="Lists\LinkedList\Double\DoublyLinkedListRunner.cs" />
+    <Compile Include="Lists\LinkedList\Double\Node.cs" />
     <Compile Include="Lists\LinkedList\Single\Interfaces\ILinkedList.cs" />
     <Compile Include="Lists\LinkedList\Single\LinkedList.cs" />
-    <Compile Include="Lists\LinkedList\Single\LinkedListRunner.cs" />
+    <Compile Include="Lists\LinkedList\Single\SinglyLinkedListRunner.cs" />
     <Compile Include="Lists\LinkedList\Single\Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

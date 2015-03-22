@@ -9,7 +9,7 @@ namespace DataStructures_Algorithms.Lists.LinkedList.Single
     {
         private Node<T> Head { get; set; }
 
-        private Node<T> Current { get; set; } 
+        private Node<T> Current { get; set; }
 
         /// <summary>
         /// Initialise linked list with empty head
@@ -17,7 +17,7 @@ namespace DataStructures_Algorithms.Lists.LinkedList.Single
         public LinkedList()
         {
             Head = null;
-        } 
+        }
 
         /// <summary>
         /// Add a new node to the list
@@ -28,10 +28,11 @@ namespace DataStructures_Algorithms.Lists.LinkedList.Single
             var newNode = new Node<T>(value);
 
             // If no head, new node becomes the head
-            if(Head == null)
+            if (Head == null)
             {
                 Head = newNode;
-            } else
+            }
+            else
             {
                 Current.Next = newNode;
             }
@@ -56,7 +57,7 @@ namespace DataStructures_Algorithms.Lists.LinkedList.Single
                 Head = node.Next;
             }
 
-            while(node != null)
+            while (node != null)
             {
                 if (node.Next.Value.Equals(value))
                 {
@@ -74,7 +75,7 @@ namespace DataStructures_Algorithms.Lists.LinkedList.Single
         /// <returns></returns>
         public override string ToString()
         {
-            if(Head == null)
+            if (Head == null)
             {
                 return String.Empty;
             }
@@ -84,7 +85,7 @@ namespace DataStructures_Algorithms.Lists.LinkedList.Single
             var currentItem = Head;
             list.Add(currentItem.Value);
 
-            while(currentItem.Next != null)
+            while (currentItem.Next != null)
             {
                 list.Add(currentItem.Next.Value);
                 currentItem = currentItem.Next;

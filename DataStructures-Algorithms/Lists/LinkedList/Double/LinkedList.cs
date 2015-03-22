@@ -1,20 +1,17 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DataStructures_Algorithms.Lists.LinkedList.Double.Interfaces;
 
 namespace DataStructures_Algorithms.Lists.LinkedList.Double
 {
-    public class LinkedList<T>: ILinkedList<T>, IEnumerable where T : IComparable
+    public class LinkedList<T> : ILinkedList<T>, IEnumerable where T : IComparable
     {
         private Node<T> Head { get; set; }
 
         private Node<T> Tail { get; set; }
 
-        private Node<T> Current { get; set; } 
+        private int Count { get; set; }
 
         /// <summary>
         /// Initialise linked list with empty head and tail
@@ -23,59 +20,6 @@ namespace DataStructures_Algorithms.Lists.LinkedList.Double
         {
             Head = null;
             Tail = null;
-        }
-
-        /// <summary>
-        /// Add a new node to the list
-        /// </summary>
-        /// <param name="value"></param>
-        public void Add(T value)
-        {
-            var newNode = new Node<T>(value);
-
-            // If no head or tail, new node becomes both
-            if (Head == null && Tail == null)
-            {
-                Head = newNode;
-                Tail = newNode;
-            }
-            else
-            {
-                Current.Next = newNode;
-                Tail.Next = newNode;
-                newNode.Prev = Tail;
-                Tail = newNode;
-            }
-
-            // Current node always newest created node
-            Current = newNode;
-        }
-
-        /// <summary>
-        /// Loop through nodes, and remove node if value found.
-        /// Once found, ensure that next node is set to continue
-        /// list
-        /// </summary>
-        /// <param name="value"></param>
-        public void Remove(T value)
-        {
-            var node = Head;
-
-            if (node.Value.Equals(value))
-            {
-                Head = node.Next;
-            }
-
-            while (node != null)
-            {
-                if (node.Next.Value.Equals(value))
-                {
-                    node.Next = node.Next.Next;
-                    node.Next.Prev = node;
-                    return;
-                }
-                node = node.Next;
-            }
         }
 
         /// <summary>
@@ -125,6 +69,162 @@ namespace DataStructures_Algorithms.Lists.LinkedList.Double
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
+        }
+
+        /// <summary>
+        /// Initial add method
+        /// </summary>
+        /// <param name="value"></param>
+        public void Add(T value)
+        {
+            if (Tail == null)
+            {
+                Tail = new Node<T>(value);
+                Count++;
+            }
+            else
+            {
+                AddAtEnd(value);
+            }
+        }
+
+        /// <summary>
+        /// Add node after another node
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="after"></param>
+        public void AddAfter(T value, Node<T> after)
+        {
+            if (after == null)
+            {
+                throw new NullReferenceException();
+            }
+
+            var newNode = new Node<T>(value);
+            if (after == Tail)
+            {
+                newNode.Prev = after;
+                after.Next = newNode;
+                Tail = newNode;
+            }
+            else
+            {
+                newNode.Next = after.Next;
+                after.Next.Prev = newNode;
+                newNode.Prev = after;
+                after.Next = newNode;
+            }
+
+            if (Head != null) return;
+
+            Head = after;
+            Head.Next = newNode;
+
+            Count++;
+        }
+
+        /// <summary>
+        /// Add node before other node
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="before"></param>
+        public void AddBefore(T value, Node<T> before)
+        {
+            if (before == null)
+            {
+                throw new NullReferenceException();
+            }
+
+            var newNode = new Node<T>(value);
+            if (Head == before)
+            {
+                newNode.Next = Head;
+                Head.Prev = newNode;
+                Head = newNode;
+                Count++;
+            }
+            else
+            {
+                AddAfter(value, before.Prev);
+            }
+        }
+
+        /// <summary>
+        /// Add value to beginning of list
+        /// </summary>
+        /// <param name="value"></param>
+        public void AddAtBeginning(T value)
+        {
+            AddAfter(value, Head);
+        }
+
+        /// <summary>
+        /// Add value to end of list
+        /// </summary>
+        /// <param name="value"></param>
+        public void AddAtEnd(T value)
+        {
+            AddAfter(value, Tail);
+        }
+
+        /// <summary>
+        /// Loop through collection to get node
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public Node<T> Get(T value)
+        {
+            var node = Head;
+            while (node != null)
+            {
+                if (node.Value.Equals(value))
+                {
+                    return node;
+                }
+
+                node = node.Next;
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Grab node and alter next/prev pointers based on positon
+        /// </summary>
+        /// <param name="value"></param>
+        public void Remove(T value)
+        {
+            var currentItem = Get(value);
+            
+            if (currentItem == null) return;
+
+            var prevItem = currentItem.Prev;
+
+            Count--;
+
+            if (Count == 0)
+            {
+                // Current node is head
+                Head = null;
+            }
+            else if (prevItem == null)
+            {
+                // Current node is head
+                Head = currentItem.Next;
+                Head.Prev = null;
+            }
+            else if (currentItem == Tail)
+            {
+                // Current noe is at end
+                currentItem.Prev.Next = null;
+                Tail = currentItem.Prev;
+            }
+            else
+            {
+                // Current node is in middle of list
+                currentItem.Prev.Next = currentItem.Next;
+                currentItem.Next.Prev = currentItem.Prev;
+            }
         }
     }
 }

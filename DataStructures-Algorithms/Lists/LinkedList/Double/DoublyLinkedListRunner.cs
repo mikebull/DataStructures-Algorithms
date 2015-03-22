@@ -20,13 +20,17 @@ namespace DataStructures_Algorithms.Lists.LinkedList.Double
         /// </summary>
         private static void InstantiateIntegrerList()
         {
-            var intList = new LinkedList<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            var intList = new LinkedList<int> { 1, 2, 3, 4, 6, 7, 8, 9, 10 };
+
+            var node = intList.Get(4);
+
+            intList.AddAfter(5, node);
 
             Console.WriteLine(String.Join(", ", intList));
 
             intList.Remove(5);
 
-            Console.WriteLine(intList.ToString());
+            Console.WriteLine(intList + "\r\n");
         }
 
         /// <summary>
@@ -40,7 +44,7 @@ namespace DataStructures_Algorithms.Lists.LinkedList.Double
 
             stringList.Remove("5");
 
-            Console.WriteLine(stringList.ToString());
+            Console.WriteLine(stringList + "\r\n");
         }
     }
 }

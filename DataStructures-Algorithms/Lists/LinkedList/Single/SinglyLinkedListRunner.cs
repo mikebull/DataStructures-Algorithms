@@ -26,7 +26,7 @@ namespace DataStructures_Algorithms.Lists.LinkedList.Single
 
             intList.Remove(5);
 
-            Console.WriteLine(intList.ToString());
+            Console.WriteLine(intList + "\r\n");
         }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace DataStructures_Algorithms.Lists.LinkedList.Single
 
             stringList.Remove("5");
 
-            Console.WriteLine(stringList.ToString());
+            Console.WriteLine(stringList + "\r\n");
         }
     }
 }

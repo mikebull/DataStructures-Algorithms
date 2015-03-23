@@ -5,5 +5,6 @@ A collection of various data structures and algorithms implemented in C#, with t
 Currently Implemented
 ---------------------
 
+* [Array List](http://en.wikipedia.org/wiki/Dynamic_array)
 * [Single Linked List](http://en.wikipedia.org/wiki/Linked_list)
 * [Doubly Linked List](http://en.wikipedia.org/wiki/Doubly_linked_list)

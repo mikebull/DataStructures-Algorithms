@@ -2,7 +2,7 @@
 
 namespace DataStructures_Algorithms.Lists.ArrayList.Interfaces
 {
-    public interface IArrayList<T> where T : IComparable
+    public interface IArrayList<in T> where T : IComparable
     {
         void Add(T value);
 

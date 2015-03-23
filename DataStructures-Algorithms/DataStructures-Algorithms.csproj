@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lists\ArrayList\ArrayList.cs" />
+    <Compile Include="Lists\ArrayList\ArrayListRunner.cs" />
+    <Compile Include="Lists\ArrayList\Interfaces\IArrayList.cs" />
     <Compile Include="Lists\LinkedList\Double\Interfaces\ILinkedList.cs" />
     <Compile Include="Lists\LinkedList\Double\LinkedList.cs" />
     <Compile Include="Lists\LinkedList\Double\DoublyLinkedListRunner.cs" />
@@ -56,6 +59,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Arrays\" />
     <Folder Include="Graphs\" />
     <Folder Include="Hashes\" />
     <Folder Include="Sorting\" />

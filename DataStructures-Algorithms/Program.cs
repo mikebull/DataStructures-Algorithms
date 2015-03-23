@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataStructures_Algorithms.Lists.ArrayList;
 using DataStructures_Algorithms.Lists.LinkedList.Double;
 using DataStructures_Algorithms.Lists.LinkedList.Single;
 
@@ -16,9 +18,11 @@ namespace DataStructures_Algorithms
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            SinglyLinkedListRunner.Run();
+            //SinglyLinkedListRunner.Run();
 
-            DoublyLinkedListRunner.Run();
+            //DoublyLinkedListRunner.Run();
+
+            ArrayListRunner.Run();
         }
     }
 }

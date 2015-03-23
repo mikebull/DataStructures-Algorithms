@@ -18,7 +18,7 @@ namespace DataStructures_Algorithms.Lists.ArrayList.Interfaces
 
         void Remove(int index);
 
-        int FindIdByElement(T node);
+        int GetIndexByNode(T node);
 
         void Replace(T oldNode, T newNode);
 

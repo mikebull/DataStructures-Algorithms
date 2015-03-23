@@ -231,11 +231,11 @@ namespace DataStructures_Algorithms.Lists.ArrayList
         }
 
         /// <summary>
-        /// Return the index node of a given element
+        /// Return the index of a given node
         /// </summary>
         /// <param name="node"></param>
         /// <returns></returns>
-        public int FindIdByElement(T node)
+        public int GetIndexByNode(T node)
         {
             for (var i = 0; i < Count; i++)
             {

@@ -52,6 +52,10 @@
     <Compile Include="Lists\LinkedList\Single\LinkedList.cs" />
     <Compile Include="Lists\LinkedList\Single\SinglyLinkedListRunner.cs" />
     <Compile Include="Lists\LinkedList\Single\Node.cs" />
+    <Compile Include="Lists\SkipList\Interfaces\ISkipList.cs" />
+    <Compile Include="Lists\SkipList\Node.cs" />
+    <Compile Include="Lists\SkipList\SkipList.cs" />
+    <Compile Include="Lists\SkipList\SkipListRunner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

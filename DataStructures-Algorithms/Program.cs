@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using DataStructures_Algorithms.Lists.ArrayList;
 using DataStructures_Algorithms.Lists.LinkedList.Double;
 using DataStructures_Algorithms.Lists.LinkedList.Single;
+using DataStructures_Algorithms.Lists.SkipList;
 
 namespace DataStructures_Algorithms
 {
@@ -22,7 +23,9 @@ namespace DataStructures_Algorithms
 
             //DoublyLinkedListRunner.Run();
 
-            ArrayListRunner.Run();
+            //ArrayListRunner.Run();
+
+            SkipListRunner.Run();
         }
     }
 }

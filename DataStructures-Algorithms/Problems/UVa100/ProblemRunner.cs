@@ -14,6 +14,8 @@ namespace DataStructures_Algorithms.Problems.UVa100
             Console.WriteLine(UVa100.Compute(100, 200));
             Console.WriteLine(UVa100.Compute(201, 210));
             Console.WriteLine(UVa100.Compute(900, 1000));
+            Console.WriteLine(UVa100.Compute(1000, 900));
+            Console.WriteLine(UVa100.Compute(999999, 999990));
         }
     }
 }

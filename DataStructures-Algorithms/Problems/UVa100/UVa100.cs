@@ -20,14 +20,13 @@ namespace DataStructures_Algorithms.Problems.UVa100
         {
             var max = 0;
 
-            for (var x = i; x <= j; x++)
+            var from = Math.Min(i, j);
+            var to = Math.Max(i, j);
+
+            for (var x = from; x <= to; x++)
             {
                 var cycleLength = ComputeCycleLength(x);
-
-                if (cycleLength > max)
-                {
-                    max = cycleLength;
-                }
+                max = Math.Max(max, cycleLength);
             }
 
             return String.Format("{0} {1} {2}", i, j, max);

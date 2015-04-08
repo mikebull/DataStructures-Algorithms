@@ -59,6 +59,8 @@
     <Compile Include="Lists\SkipList\Node.cs" />
     <Compile Include="Lists\SkipList\SkipList.cs" />
     <Compile Include="Lists\SkipList\SkipListRunner.cs" />
+    <Compile Include="Problems\UVa100\ProblemRunner.cs" />
+    <Compile Include="Problems\UVa100\UVa100.cs" />
     <Compile Include="Problems\UVa105\Skyline.cs" />
     <Compile Include="Problems\UVa105\SkylineProblemRunner.cs" />
     <Compile Include="Problems\UVa105\Skyscraper.cs" />
@@ -76,7 +78,6 @@
     <Folder Include="Arrays\" />
     <Folder Include="Graphs\" />
     <Folder Include="Hashes\" />
-    <Folder Include="Problems\UVa100\" />
     <Folder Include="Sorting\" />
     <Folder Include="Stacks\" />
     <Folder Include="Trees\Heap\" />

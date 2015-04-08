@@ -9,6 +9,7 @@ using DataStructures_Algorithms.Lists.ArrayList;
 using DataStructures_Algorithms.Lists.LinkedList.Double;
 using DataStructures_Algorithms.Lists.LinkedList.Single;
 using DataStructures_Algorithms.Lists.SkipList;
+using DataStructures_Algorithms.Problems.UVa100;
 using DataStructures_Algorithms.Problems.UVa105;
 using DataStructures_Algorithms.Trees.Binary.BST;
 
@@ -24,18 +25,14 @@ namespace DataStructures_Algorithms
         static void Main(string[] args)
         {
             //SinglyLinkedListRunner.Run();
-
             //DoublyLinkedListRunner.Run();
-
             //ArrayListRunner.Run();
-
             //SkipListRunner.Run();
-
             //BinarySearchTreeRunner.Run();
-
             //StackRunner.Run();
-
-            SkylineProblemRunner.Run();
+            //SkylineProblemRunner.Run();
+            
+            ProblemRunner.Run();
         }
     }
 }

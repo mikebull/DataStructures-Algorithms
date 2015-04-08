@@ -58,6 +58,10 @@
     <Compile Include="Lists\SkipList\SkipListRunner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trees\Binary\BST\BinarySearchTreeRunner.cs" />
+    <Compile Include="Trees\Binary\BST\Interfaces\IBinarySearchTree.cs" />
+    <Compile Include="Trees\Binary\BST\Node.cs" />
+    <Compile Include="Trees\Binary\BST\BinarySearchTree.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -68,7 +72,6 @@
     <Folder Include="Hashes\" />
     <Folder Include="Sorting\" />
     <Folder Include="Stacks\" />
-    <Folder Include="Trees\Binary\" />
     <Folder Include="Trees\Heap\" />
     <Folder Include="Trees\Tries\" />
   </ItemGroup>

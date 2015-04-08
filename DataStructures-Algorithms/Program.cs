@@ -8,6 +8,7 @@ using DataStructures_Algorithms.Lists.ArrayList;
 using DataStructures_Algorithms.Lists.LinkedList.Double;
 using DataStructures_Algorithms.Lists.LinkedList.Single;
 using DataStructures_Algorithms.Lists.SkipList;
+using DataStructures_Algorithms.Trees.Binary.BST;
 
 namespace DataStructures_Algorithms
 {
@@ -15,6 +16,7 @@ namespace DataStructures_Algorithms
     {
         /// <summary>
         /// Main method for console application
+        /// TODO: Scrap runners and use NUnit
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
@@ -25,7 +27,9 @@ namespace DataStructures_Algorithms
 
             //ArrayListRunner.Run();
 
-            SkipListRunner.Run();
+            //SkipListRunner.Run();
+
+            BinarySearchTreeRunner.Run();
         }
     }
 }

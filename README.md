@@ -9,3 +9,4 @@ Currently Implemented
 * [Single Linked List](http://en.wikipedia.org/wiki/Linked_list)
 * [Doubly Linked List](http://en.wikipedia.org/wiki/Doubly_linked_list)
 * [Skip List](http://en.wikipedia.org/wiki/Skip_list)
+* [Binary Search Tree](http://en.wikipedia.org/wiki/Binary_search_tree)

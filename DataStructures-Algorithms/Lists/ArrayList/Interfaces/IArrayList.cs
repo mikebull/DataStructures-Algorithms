@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections;
 
 namespace DataStructures_Algorithms.Lists.ArrayList.Interfaces
 {
-    public interface IArrayList<in T> where T : IComparable
+    public interface IArrayList<in T> : IEnumerable where T : IComparable
     {
         void Add(T value);
 

@@ -5,7 +5,7 @@ using DataStructures_Algorithms.Lists.LinkedList.Double.Interfaces;
 
 namespace DataStructures_Algorithms.Lists.LinkedList.Double
 {
-    public class LinkedList<T> : ILinkedList<T>, IEnumerable where T : IComparable
+    public class LinkedList<T> : ILinkedList<T> where T : IComparable
     {
         private Node<T> Head { get; set; }
 

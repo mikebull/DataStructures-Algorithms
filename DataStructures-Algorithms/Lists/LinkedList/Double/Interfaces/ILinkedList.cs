@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections;
 
 namespace DataStructures_Algorithms.Lists.LinkedList.Double.Interfaces
 {
-    public interface ILinkedList<T> where T : IComparable
+    public interface ILinkedList<T> : IEnumerable where T : IComparable
     {
         void Add(T value);
 

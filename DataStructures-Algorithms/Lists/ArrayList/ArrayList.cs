@@ -5,7 +5,7 @@ using DataStructures_Algorithms.Lists.ArrayList.Interfaces;
 
 namespace DataStructures_Algorithms.Lists.ArrayList
 {
-    public class ArrayList<T> : IArrayList<T>, IEnumerable where T : IComparable
+    public class ArrayList<T> : IArrayList<T> where T : IComparable
     {
         private T[] Items { get; set; }
         private int Count { get; set; }

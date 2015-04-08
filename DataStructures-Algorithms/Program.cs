@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataStructures_Algorithms.Abstract.Stack;
 using DataStructures_Algorithms.Lists.ArrayList;
 using DataStructures_Algorithms.Lists.LinkedList.Double;
 using DataStructures_Algorithms.Lists.LinkedList.Single;
@@ -29,7 +30,9 @@ namespace DataStructures_Algorithms
 
             //SkipListRunner.Run();
 
-            BinarySearchTreeRunner.Run();
+            //BinarySearchTreeRunner.Run();
+
+            StackRunner.Run();
         }
     }
 }

@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\Stack\Interfaces\IStack.cs" />
+    <Compile Include="Abstract\Stack\Stack.cs" />
+    <Compile Include="Abstract\Stack\StackRunner.cs" />
     <Compile Include="Lists\ArrayList\ArrayList.cs" />
     <Compile Include="Lists\ArrayList\ArrayListRunner.cs" />
     <Compile Include="Lists\ArrayList\Interfaces\IArrayList.cs" />

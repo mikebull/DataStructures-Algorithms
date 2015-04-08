@@ -15,4 +15,5 @@ Currently Implemented
 
 #### Programming Problems
 
+* [The 3n + 1 Problem](http://www.algorithmist.com/index.php/UVa_100)
 * [The Skyline Problem](http://www.algorithmist.com/index.php/UVa_105)

@@ -29,7 +29,6 @@ namespace DataStructures_Algorithms.Problems.UVa105
 
             for(var i = 0; i < heights.Length - 1; i++)
             {
-                // If 
                 if (heights[i] != heights[i + 1])
                 {
                     silhouettes.Add(i + 1);

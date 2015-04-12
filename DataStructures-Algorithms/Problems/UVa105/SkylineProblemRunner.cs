@@ -16,7 +16,7 @@
                 new Skyscraper("24,4,28")
             };
 
-            var output = Skyline.GenerateSilhouetteCoordinates(skyscrapers);
+            var output = Skyline.BruteForceSilhouette(skyscrapers);
         }
     }
 }

@@ -6,7 +6,7 @@ namespace DataStructures_Algorithms.Problems.UVa105
 {
     public static class Skyline
     {
-        public static string GenerateSilhouetteCoordinates(Skyscraper[] skyscrapers)
+        public static string BruteForceSilhouette(Skyscraper[] skyscrapers)
         {
             // Get maximum right coordinate value from skyscraper collection
             var max = skyscrapers

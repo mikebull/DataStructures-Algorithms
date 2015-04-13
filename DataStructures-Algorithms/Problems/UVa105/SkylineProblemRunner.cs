@@ -17,6 +17,7 @@
             };
 
             var output = Skyline.BruteForceSilhouette(skyscrapers);
+            var output2 = Skyline.SweepLineSilhouette(skyscrapers);
         }
     }
 }

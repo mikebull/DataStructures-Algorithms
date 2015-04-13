@@ -61,6 +61,7 @@
     <Compile Include="Lists\SkipList\SkipListRunner.cs" />
     <Compile Include="Problems\UVa100\ProblemRunner.cs" />
     <Compile Include="Problems\UVa100\UVa100.cs" />
+    <Compile Include="Problems\UVa105\Event.cs" />
     <Compile Include="Problems\UVa105\Skyline.cs" />
     <Compile Include="Problems\UVa105\SkylineProblemRunner.cs" />
     <Compile Include="Problems\UVa105\Skyscraper.cs" />

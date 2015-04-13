@@ -20,7 +20,6 @@ namespace DataStructures_Algorithms.Problems.UVa105
 
         public Skyscraper(string input)
         {
-            // Parse input into variables
             var strValues = input.Split(',');
 
             if(strValues.Count() != 3)

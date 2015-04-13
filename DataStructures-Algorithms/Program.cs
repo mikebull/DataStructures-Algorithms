@@ -30,9 +30,8 @@ namespace DataStructures_Algorithms
             //SkipListRunner.Run();
             //BinarySearchTreeRunner.Run();
             //StackRunner.Run();
-            //SkylineProblemRunner.Run();
-            
-            ProblemRunner.Run();
+            SkylineProblemRunner.Run();
+            //ProblemRunner.Run();
         }
     }
 }

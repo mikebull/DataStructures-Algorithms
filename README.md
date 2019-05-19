@@ -2,7 +2,7 @@
 
 A collection of various data structures and algorithms implemented in C#, with the ultimate goal of implementing the vast majority of structures in [this list](http://en.wikipedia.org/wiki/List_of_data_structures)
 
-## Implemented so far
+## Data Strictures Implemented so far
 
 * Hash Table
 * Max Heap
@@ -13,3 +13,10 @@ A collection of various data structures and algorithms implemented in C#, with t
   * Using Array
   * Using Linked List
   * Deque (Double-Ended Queue)
+
+# Sorting algorithms
+
+* Selection Sort
+* Insertion Sort
+* Merge Sort
+* Quick Sort

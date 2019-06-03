@@ -16,13 +16,13 @@ A collection of various data structures and algorithms implemented in C#, with t
 * Graph
   * Adjacency List
 
-# Sorting algorithms
+## Sorting algorithms
 
 * Selection Sort
 * Insertion Sort
 * Merge Sort
 * Quick Sort
 
-# Searching algorithms
+## Searching algorithms
 * Depth First Search
 * Breadth First Search

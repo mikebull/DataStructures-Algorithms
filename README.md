@@ -13,6 +13,8 @@ A collection of various data structures and algorithms implemented in C#, with t
   * Using Array
   * Using Linked List
   * Deque (Double-Ended Queue)
+* Graph
+  * Adjacency List
 
 # Sorting algorithms
 
@@ -20,3 +22,7 @@ A collection of various data structures and algorithms implemented in C#, with t
 * Insertion Sort
 * Merge Sort
 * Quick Sort
+
+# Searching algorithms
+* Depth First Search
+* Breadth First Search
